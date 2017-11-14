@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ureply.deep.ureply.MainActivity">
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:id="@+id/imageView3"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ureplylogouni" />
+
+        <TextView
+            android:id="@+id/sessionText"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Session Number *" />
+
+        <EditText
+            android:id="@+id/sessionid"
+            android:background="@drawable/border"
+            android:textColor="#000000"
+            android:textCursorDrawable = "@null"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:id="@+id/studentnameText"
+            android:layout_width="250dp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Student ID (Optional)" />
+
+        <EditText
+            android:id="@+id/studentname"
+            android:background="@drawable/border"
+            android:layout_width="250dp"
+            android:textColor="#000000"
+            android:textCursorDrawable = "@null"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/studentidText"
+            android:textColor="#000000"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Student Name (Optional)" />
+
+        <EditText
+            android:id="@+id/studentid"
+            android:background="@drawable/border"
+            android:textColor="#000000"
+            android:textCursorDrawable = "@null"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@+id/editTextPassword"
+            android:text="Remember my Student ID and Student Name"
+            android:textSize="10dp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_marginTop="10dp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="LOGIN" />
+    </LinearLayout>
+</RelativeLayout>
